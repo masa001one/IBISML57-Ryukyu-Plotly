@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>IBISML57-Ryukyu デモページ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* ページ全体のベース */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+    /* ヘッダー */
+    header {
+      background-color: #0366d6;
+      padding: 1.5rem;
+      text-align: center;
+      color: #fff;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      letter-spacing: 0.05em;
+    }
+    /* ナビゲーション領域 */
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    /* 各リンクカード */
+    .nav a {
+      display: block;
+      width: 240px;
+      padding: 1.2rem;
+      text-decoration: none;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      color: #0366d6;
+      font-weight: bold;
+    }
+    .nav a:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+    .nav a span {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #555;
+      font-weight: normal;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>IBISML57-Ryukyu データ可視化</h1>
+  </header>
+  <div class="nav">
+    <a href="3d_plot.html">
+      3D Surface Plot
+      <span>三次元サーフェスプロット</span>
+    </a>
+    <a href="plotly_scatter.html">
+      3D Scatter Plot
+      <span>三次元散布図</span>
+    </a>
+    <a href="plotly_bar.html">
+      Bar Chart
+      <span>棒グラフ</span>
+    </a>
+  </div>
+</body>
+</html>
