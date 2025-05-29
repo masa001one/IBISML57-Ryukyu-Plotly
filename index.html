@@ -26,37 +26,10 @@
       letter-spacing: 0.05em;
     }
     /* ナビゲーション領域 */
-    .nav {
+    .iframe-container {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1.5rem;
-      padding: 2rem;
-    }
-    /* 各リンクカード */
-    .nav a {
-      display: block;
-      width: 240px;
-      padding: 1.2rem;
-      text-decoration: none;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      text-align: center;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      color: #0366d6;
-      font-weight: bold;
-    }
-    .nav a:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-    }
-    .nav a span {
-      display: block;
-      margin-top: 0.5rem;
-      font-size: 0.9rem;
-      color: #555;
-      font-weight: normal;
+      width: 100%;
+      height: calc(100vh - 4.5rem); /* ヘッダー分を差し引いた高さ */
     }
   </style>
 </head>
@@ -64,19 +37,10 @@
   <header>
     <h1>IBISML57-Ryukyu データ可視化</h1>
   </header>
-  <div class="nav">
-    <a href="plot7o3.html">
-      Plot7o3
-      <span>三次元プロット 1（g=9）</span>
-    </a>
-    <a href="plot7u3.html">
-      Plot7u3
-      <span>三次元プロット 2（g=5.5）</span>
-    </a>
-    <a href="plot7.html">
-      Plot7
-      <span>三次元プロット 3</span>
-    </a>
+  <div class="iframe-container">
+    <iframe src="plot7o3.html" title="三次元プロット 1（g=9）" style="flex:1; border:none;"></iframe>
+    <iframe src="plot7u3.html" title="三次元プロット 2（g=5.5）" style="flex:1; border:none;"></iframe>
+    <iframe src="plot7.html"    title="三次元プロット 3"          style="flex:1; border:none;"></iframe>
   </div>
 </body>
 </html>
